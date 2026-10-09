@@ -1,0 +1,15 @@
+
+# Compiled programs
+*.exe
+main
+todo
+
+# Personal task data
+data/tasks.txt
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.tmp
+*.log
