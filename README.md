@@ -1,96 +1,119 @@
 # C++ To-Do List
 
-A simple console-based To-Do List application built using C++. This project helps users manage daily tasks through an interactive menu.
+A console-based To-Do List application built using C++. It allows users to manage daily tasks through an interactive menu, with persistent storage using file handling.
 
 ## Features
 
-* Add new tasks
-* View all tasks
-* Mark tasks as completed
-* Edit existing tasks
-* Delete tasks
-* Search tasks by title
-* Save tasks to a file
-* Load saved tasks when the application starts
+- Add new tasks
+- View all tasks
+- Mark tasks as completed
+- Edit existing tasks
+- Delete tasks
+- Search tasks by title (case-insensitive)
+- Save tasks to a file
+- Load saved tasks when the application starts
+- Validate user input
+- Handle file-loading and saving errors
 
 ## Technologies Used
 
-* **Language:** C++
-* **Concepts:** Structures, vectors, functions, loops, conditional statements, and file handling
-* **Compiler:** GCC (g++)
+- **Language:** C++
+- **Concepts:** Object-oriented programming (classes and objects), encapsulation, vectors, functions, loops, conditional statements, input validation, and file handling
+- **Compiler:** GCC (g++)
+- **C++ Standard:** C++17
 
 ## Project Structure
 
 ```text
 cpp-todo-list/
 ├── src/
-│   └── main.cpp
+│   ├── main.cpp
+│   ├── Task.h
+│   ├── Task.cpp
+│   ├── TodoList.h
+│   └── TodoList.cpp
 ├── data/
 │   └── .gitkeep
 ├── screenshots/
+│   ├── main-menu.png
+│   └── task-management.png
 ├── .gitignore
 └── README.md
 ```
 
+## Requirements
+
+- GCC compiler with C++17 support
+- Terminal or code editor such as Visual Studio Code
+- Windows, Linux, or macOS environment with a compatible compiler
+
 ## How to Run
 
-### Requirements
+### 1. Clone the Repository
 
-* A C++ compiler such as GCC
-* A terminal or code editor such as Visual Studio Code
+```bash
+git clone https://github.com/dhruv1o7/cpp-todo-list.git
+cd cpp-todo-list
+```
 
-### Steps
+### 2. Compile the Program
 
-1. Open the `src` folder in your terminal.
+Open the terminal in the `src` directory:
 
-2. Compile the program:
+```bash
+cd src
+g++ -std=c++17 main.cpp Task.cpp TodoList.cpp -o main
+```
 
-   ```bash
-   g++ -std=c++17 main.cpp -o main
-   ```
+### 3. Run the Application
 
-3. Run the application:
+**Windows PowerShell:**
 
-   **Windows PowerShell**
+```powershell
+.\main.exe
+```
 
-   ```powershell
-   .\main
-   ```
+**Linux/macOS:**
 
-   **Linux/macOS**
+```bash
+./main
+```
 
-   ```bash
-   ./main
-   ```
-
-**Note:** The current program uses a relative path to store task data. Run it from the `src` directory so saved tasks are written to the project's `data` folder.
-
-## Learning Outcomes
-
-* Practiced organizing C++ programs using functions and structures.
-* Used vectors to store and manage tasks.
-* Implemented file handling to save and load data.
-* Built a menu-driven command-line application.
-
-## Future Improvements
-
-* Add task deadlines and priorities.
-* Improve input validation.
-* Add a graphical user interface.
+**Note:** Run the application from the `src` directory. The application currently uses a relative path to access `../data/tasks.txt`.
 
 ## Screenshots
 
 ### Main Menu
+
 ![Main Menu](screenshots/main-menu.png)
 
-### Task List
-![Task List](screenshots/task-list.png)
+### Task Management
 
-### Completed Task
-![Completed Task](screenshots/completed-task.png)
+![Task Management](screenshots/task-management.png)
+
+## Learning Outcomes
+
+- Applied object-oriented programming by organizing code into classes.
+- Used encapsulation to manage task data and operations.
+- Used `std::vector` to store and manage tasks.
+- Implemented file handling to save and load tasks.
+- Practiced input validation and error handling.
+- Organized a multi-file C++ project using header and implementation files.
+- Used Git and GitHub for version control and project hosting.
+
+## Future Improvements
+
+- Add task deadlines and priorities.
+- Implement sorting and filtering.
+- Improve file storage reliability.
+- Add automated unit tests.
+- Develop a graphical user interface.
 
 ## Author
 
-Dhruv Bhatkar
+**Dhruv Bhatkar**
 
-B.Tech Computer Science and Engineering — Artificial Intelligence and Machine Learning
+B.Tech Computer Science and Engineering  
+Artificial Intelligence and Machine Learning
+
+GitHub: [@dhruv1o7](https://github.com/dhruv1o7)
