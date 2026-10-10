@@ -67,19 +67,19 @@ g++ -std=c++17 main.cpp Task.cpp TodoList.cpp -o main
 
 ### 3. Run the Application
 
-**Windows PowerShell:**
+**Windows PowerShell**
 
 ```powershell
 .\main.exe
 ```
 
-**Linux/macOS:**
+**Linux/macOS**
 
 ```bash
 ./main
 ```
 
-**Note:** Run the application from the `src` directory. The application currently uses a relative path to access `../data/tasks.txt`.
+**Note:** Run the application from the `src` directory. The application currently uses the relative path `../data/tasks.txt` for task storage.
 
 ## Screenshots
 
@@ -91,20 +91,25 @@ g++ -std=c++17 main.cpp Task.cpp TodoList.cpp -o main
 
 ![Task Management](screenshots/task-management.png)
 
+### Searching Task
+
+![Searching Task](screenshots/search-results.png)
+
+
 ## Learning Outcomes
 
-- Applied object-oriented programming by organizing code into classes.
-- Used encapsulation to manage task data and operations.
-- Used `std::vector` to store and manage tasks.
+- Applied object-oriented programming using classes and objects.
+- Used encapsulation to organize task data and operations.
+- Used `std::vector` to store and manage multiple tasks.
 - Implemented file handling to save and load tasks.
 - Practiced input validation and error handling.
 - Organized a multi-file C++ project using header and implementation files.
-- Used Git and GitHub for version control and project hosting.
+- Used Git and GitHub for version control.
 
 ## Future Improvements
 
 - Add task deadlines and priorities.
-- Implement sorting and filtering.
+- Implement task sorting and filtering.
 - Improve file storage reliability.
 - Add automated unit tests.
 - Develop a graphical user interface.
@@ -114,6 +119,6 @@ g++ -std=c++17 main.cpp Task.cpp TodoList.cpp -o main
 **Dhruv Bhatkar**
 
 B.Tech Computer Science and Engineering  
-Artificial Intelligence and Machine Learning
+Specialization: Artificial Intelligence and Machine Learning
 
 GitHub: [@dhruv1o7](https://github.com/dhruv1o7)
