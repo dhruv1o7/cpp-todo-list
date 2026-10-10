@@ -36,7 +36,8 @@ cpp-todo-list/
 │   └── .gitkeep
 ├── screenshots/
 │   ├── main-menu.png
-│   └── task-management.png
+│   ├── task-management.png
+│   └── search-results.png
 ├── .gitignore
 └── README.md
 ```
@@ -45,7 +46,7 @@ cpp-todo-list/
 
 - GCC compiler with C++17 support
 - Terminal or code editor such as Visual Studio Code
-- Windows, Linux, or macOS environment with a compatible compiler
+- Compatible Windows, Linux, or macOS environment
 
 ## How to Run
 
@@ -91,10 +92,9 @@ g++ -std=c++17 main.cpp Task.cpp TodoList.cpp -o main
 
 ![Task Management](screenshots/task-management.png)
 
-### Searching Task
+### Searching Tasks
 
-![Searching Task](screenshots/search-results.png)
-
+![Searching Tasks](screenshots/search-results.png)
 
 ## Learning Outcomes
 
@@ -104,7 +104,7 @@ g++ -std=c++17 main.cpp Task.cpp TodoList.cpp -o main
 - Implemented file handling to save and load tasks.
 - Practiced input validation and error handling.
 - Organized a multi-file C++ project using header and implementation files.
-- Used Git and GitHub for version control.
+- Used Git and GitHub for version control and project hosting.
 
 ## Future Improvements
 
